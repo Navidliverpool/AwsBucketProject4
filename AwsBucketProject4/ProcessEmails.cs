@@ -22,6 +22,7 @@ namespace AwsBucketProject4
         public int MessagesContainsHeader_x_gt_settings;
         public int MessagesContainsThreeMusketeers;
         public int Error;
+        int errorCounter;
 
         public void EmailProcesser(AwsSettings awsSettings)
         {
@@ -29,28 +30,36 @@ namespace AwsBucketProject4
             {
 
                 var objectList = s3Client.ListObjects(awsSettings.BucketName);
-                foreach (var s3Object in objectList.S3Objects)
+                try
                 {
-
-                    using (var retrievedObject = s3Client.GetObject(s3Object.BucketName, s3Object.Key))
+                    foreach (var s3Object in objectList.S3Objects)
                     {
 
-                        MimeMessage message = MimeMessage.Load(retrievedObject.ResponseStream);
-
-                        EmailContent result = new EmailContent()
+                        using (var retrievedObject = s3Client.GetObject(s3Object.BucketName, s3Object.Key))
                         {
-                            Email = retrievedObject.Key,
-                            Subject = message.Subject,
-                            Date = message.Date,
-                            From = message.From,
-                            To = message.To,
-                            Cc = message.Cc,
-                            Headers = message.Headers,
-                            Body = message.TextBody
-                        };
 
-                        EmailList.Add(result);
+                            MimeMessage message = MimeMessage.Load(retrievedObject.ResponseStream);
+
+                            EmailContent result = new EmailContent()
+                            {
+                                Email = retrievedObject.Key,
+                                Subject = message.Subject,
+                                Date = message.Date,
+                                From = message.From,
+                                To = message.To,
+                                Cc = message.Cc,
+                                Headers = message.Headers,
+                                Body = message.TextBody
+                            };
+
+                            EmailList.Add(result);
+                        }
                     }
+                }
+                catch(Exception ex)
+                {
+                    errorCounter++;
+                    Console.WriteLine($"Errors: {ex.Message}");
                 }
 
                 DateTimeOffset now = DateTimeOffset.Now;
