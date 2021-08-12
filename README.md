@@ -29,4 +29,7 @@ By adding the AWS bucket secret information such as it's "awsAccessKeyID", "awsS
 - Messages Contains Three Musketeers:       Count of the times any of the Three Musketeers (Athos, Aramis or Porthos)
 - Sender From space.corp:                   Count of the emails where a sender has the domain space.corp
 - Errors:                                   Count of the errors encountered
-- Here's an idea: why don't we take `SuperiorProject` and turn it into `**Reasonable**Project`.
+
+Messages Contains Three Musketeers:       Count of the times any of the Three Musketeers (Athos, Aramis or Porthos)
+Sender From space.corp:                   Count of the emails where a sender has the domain space.corp
+Errors:  
