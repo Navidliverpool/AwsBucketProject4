@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsBucketProject4", "AwsBucketProject4\AwsBucketProject4.csproj", "{597501D0-2279-4031-8FE5-BCA4D8EF1274}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{597501D0-2279-4031-8FE5-BCA4D8EF1274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{597501D0-2279-4031-8FE5-BCA4D8EF1274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{597501D0-2279-4031-8FE5-BCA4D8EF1274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{597501D0-2279-4031-8FE5-BCA4D8EF1274}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5DD4AEFF-C3B1-40D3-ABA2-6A2081451692}
+	EndGlobalSection
+EndGlobal
