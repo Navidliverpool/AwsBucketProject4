@@ -8,8 +8,21 @@ using System.Threading.Tasks;
 
 namespace AwsBucketProject4
 {
-    public class ProcessEmails
+    internal class ProcessEmails
     {
+        public readonly List<EmailContent> EmailList = new List<EmailContent>();
+        public int LastYearCount;
+        public int ThisYearCount;
+        public int ThisMonthCount;
+        public int ThisWeekCount;
+        public int TotalRecipientsCount;
+        public int ToCount;
+        public int CcCount;
+        public int SubjectsContainsConfusionCount;
+        public int MessagesContainsHeader_x_gt_settings;
+        public int MessagesContainsThreeMusketeers;
+        public int Error;
+
         public void EmailProcesser(AwsSettings awsSettings)
         {
             using (var s3Client = new AmazonS3Client(awsSettings.AwsAccessKeyID, awsSettings.AwsSecretAccessKey, awsSettings.Endpoint))
@@ -38,5 +51,8 @@ namespace AwsBucketProject4
 
                         EmailList.Add(result);
                     }
+                }
+            }
+        }
     }
 }

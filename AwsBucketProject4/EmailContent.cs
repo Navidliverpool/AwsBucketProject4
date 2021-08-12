@@ -3,7 +3,7 @@ using System;
 
 namespace AwsBucketProject4
 {
-    internal class EmailContent
+    class EmailContent
     {
         public string Email { get; set; }
         public string Subject { get; set; }
