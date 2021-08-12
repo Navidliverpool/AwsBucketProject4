@@ -52,6 +52,24 @@ namespace AwsBucketProject4
                         EmailList.Add(result);
                     }
                 }
+
+                DateTimeOffset now = DateTimeOffset.Now;
+                var lastYearDateTime = new DateTimeOffset(now.Year - 1, 1, 1, 0, 0, 0, DateTimeOffset.Now.Offset);
+                var thisYearDateTime = new DateTimeOffset(now.Year, 1, 1, 0, 0, 0, DateTimeOffset.Now.Offset);
+                var thisWeekDateTime = new DateTimeOffset(now.Year, now.Month, now.Day - 7, 0, 0, 0, DateTimeOffset.Now.Offset);
+
+                LastYearCount = EmailList.Count(d => d.Date >= lastYearDateTime && d.Date < thisYearDateTime);
+                ThisYearCount = EmailList.Count(d => d.Date >= thisYearDateTime);
+                ThisMonthCount = EmailList.Count(d => d.Date.Month == now.Month);
+                ThisWeekCount = EmailList.Count(d => d.Date >= thisWeekDateTime);
+                ToCount = EmailList.Sum(t => t.To.Count);
+                CcCount = EmailList.Sum(c => c.Cc.Count);
+                TotalRecipientsCount = ToCount + CcCount;
+                SubjectsContainsConfusionCount = EmailList.Count(s => s.Subject.ToLower().Contains("confusion"));
+                MessagesContainsHeader_x_gt_settings = EmailList.Count(m => m.Headers.Contains("x-gt-settings"));
+                MessagesContainsThreeMusketeers = EmailList.Count(m => m.Body.ToLower().Contains("athos")
+                                                                       || m.Body.ToLower().Contains("aramis")
+                                                                       || m.Body.ToLower().Contains("porthos"));
             }
         }
     }
