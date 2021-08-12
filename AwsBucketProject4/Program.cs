@@ -45,7 +45,6 @@ namespace AwsBucketProject4
             Console.WriteLine($"Subjects Contains Confusion: {processEmails.SubjectsContainsConfusionCount}");
             Console.WriteLine($"Messages Contains Header x-gt-settings: {processEmails.MessagesContainsHeader_x_gt_settings}");
             Console.WriteLine($"Messages Contains Three Musketeers: {processEmails.MessagesContainsThreeMusketeers}");
-            Console.WriteLine($"Sender From space.corp: ");
             Console.WriteLine($"Errors: ");
 
             Console.ReadLine();
