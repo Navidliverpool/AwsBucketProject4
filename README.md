@@ -1,11 +1,11 @@
-# AwsBucketProject4 is a C# Console Application with the target framework of 4.5 which read some data from an AWS bucket and display two sets of data to the output. 
-## To be able to use the project first you need to clone the repository.
-## you also need to have an access to an AWS bucket which has to contain the same datasets.
-## by adding the AWS bucket secret information such as it's "awsAccessKeyID", "awsSecretAccessKey" and "bucketName" the project will be ready to run.
+## AwsBucketProject4 is a C# Console Application with the target framework of 4.5 which read some data from an AWS bucket and display two sets of data to the output. 
+### To be able to use the project first you need to clone the repository.
+### you also need to have an access to an AWS bucket which has to contain the same datasets.
+### by adding the AWS bucket secret information such as it's "awsAccessKeyID", "awsSecretAccessKey" and "bucketName" the project will be ready to run.
 
 
 
-### Dataset 1 displays a bunch of information prepared from the bucket such as:
+#### Dataset 1 displays a bunch of information prepared from the bucket such as:
 
 - Email:       Name of file obtained from retrievedObject.Key
 - Subject:     The subject of the email
@@ -16,7 +16,7 @@
  
  
 
-### Dataset 2 displays a count of some extrected information from the dataset 1:
+#### Dataset 2 displays a count of some extrected information from the dataset 1:
 
 - Last Year:                                Count of emails dated from the year before the current year
 - This Year:                                Count of emails dated in the current year
