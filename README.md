@@ -7,7 +7,7 @@
 
 ##### Dataset 1 displays a bunch of information prepared from the bucket such as:
 
-- Email:       &nbsp;           Name of file obtained from retrievedObject.Key
+- Email:       &nbsp;+           Name of file obtained from retrievedObject.Key
 - Subject:     The subject of the email
 - Data:        the date
 - From:        Who the message is from
