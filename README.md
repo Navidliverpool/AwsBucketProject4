@@ -5,9 +5,9 @@ By adding the AWS bucket secret information such as it's "awsAccessKeyID", "awsS
 
 
 
-#### Dataset 1 displays a bunch of information prepared from the bucket such as:
+##### Dataset 1 displays a bunch of information prepared from the bucket such as:
 
-- Email:    |    Name of file obtained from retrievedObject.Key     |
+- Email:       Name of file obtained from retrievedObject.Key 
 - Subject:     The subject of the email
 - Data:        the date
 - From:        Who the message is from
@@ -16,7 +16,7 @@ By adding the AWS bucket secret information such as it's "awsAccessKeyID", "awsS
  
  
 
-#### Dataset 2 displays a count of some extrected information from the dataset 1:
+##### Dataset 2 displays a count of some extrected information from the dataset 1:
 
 - Last Year:                                Count of emails dated from the year before the current year
 - This Year:                                Count of emails dated in the current year
