@@ -1,7 +1,7 @@
 ## <p>*AwsBucketProject4* is a C# Console Application with the target framework of 4.5 which read some data from an AWS bucket and display two sets of data to the output.<p> 
-To be able to use the project first you need to clone the repository.
-You also need to have an access to an AWS bucket which has to contain the same datasets.
-By adding the AWS bucket secret information such as it's "awsAccessKeyID", "awsSecretAccessKey" and "bucketName" the project will be ready to run.
+<p>To be able to use the project first you need to clone the repository.<p>
+<p>You also need to have an access to an AWS bucket which has to contain the same datasets.<p>
+<p>By adding the AWS bucket secret information such as it's "awsAccessKeyID", "awsSecretAccessKey" and "bucketName" the project will be ready to run.<p>
 
 
 
