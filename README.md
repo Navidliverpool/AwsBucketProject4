@@ -16,7 +16,7 @@ Cc:                    Cc The number count of Cc recipients
 ``` 
  
 
-##### Dataset 2 displays a count of some extrected information from the dataset 1:
+##### Dataset 2 displays a count of some extreated information from the dataset 1:
 ```
 Last Year:                                Count of emails dated from the year before the current year
 This Year:                                Count of emails dated in the current year
