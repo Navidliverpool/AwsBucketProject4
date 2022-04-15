@@ -7,7 +7,7 @@
 ```
 Email:                 Name of file obtained from retrievedObject.Key
 Subject:               The subject of the email
-Data:                  the date
+Date:                  the date
 From:                  Who the message is from
 To:                    The number count of To recipients
 Cc:                    Cc The number count of Cc recipients
